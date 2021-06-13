@@ -14,6 +14,7 @@ class listaD:
                 break
             elif(nodo.getTelefono() == aux.getTelefono()):
                 print('ERROR! El contacto ya existe')
+                
                 break
          #compara apellidos
             elif(nodo.getApellido().lower() < aux.getApellido().lower()):
@@ -60,7 +61,7 @@ class listaD:
     def busca(self, numero):
         aux=self.head
         if(self.head==None):
-            print('La Agenda esta vacia')
+            #print('La Agenda esta vacia')
             return 9999
         else:
             while(True):

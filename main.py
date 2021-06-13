@@ -15,10 +15,10 @@ def busca():
     if(lista.busca(telefono)==9999):
         while(True):
             op=input('El usuario no existe, desea agregarlo?(S/N): ')
-            if op==('s' or 'S'):
+            if op=='s' or op=='S':
                  agrega()
                  break
-            elif (op=='n' or 'N'):
+            elif op=='n' or op=='N':
                 break
 
 def menu():
@@ -27,9 +27,9 @@ def menu():
         print('1. Ingresar un nuevo contacto')
         print('2. Buscar contacto')
         print('3. Visualizar agenda')
-        print('4. Salir')
-        print('----------------------------------')
+        print('4. Salir') 
         opcion=input('Ingrese una opcion: ')
+        print('----------------------------------')
 
         if opcion== '1':
             agrega()
